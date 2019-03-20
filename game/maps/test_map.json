@@ -1,0 +1,63 @@
+{ "height":10,
+ "hexsidelength":0,
+ "layers":[
+        {
+         "data":[906, 906, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 906, 906, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 906, 906, 0, 1, 0, 0, 2, 1, 0, 0, 0, 2, 906, 1, 1, 0, 1, 0, 0, 2, 2, 1, 1, 1, 906, 906, 0, 0, 0, 0, 1, 1, 1, 0, 0, 5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 5, 0, 1, 0, 0, 1, 3, 0, 0, 0, 5, 0, 0, 0, 0, 1, 3, 0, 0, 0, 1, 0, 0, 0, 0, 1, 3, 3, 0, 0, 0],
+         "height":10,
+         "name":"terrain",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":10,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[0, 0, 0, 0, 920, 0, 0, 0, 0, 936, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 920, 0, 930, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 929, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 933, 0, 0, 919, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 920, 0, 0, 0, 0, 0, 923, 0, 0, 0, 0],
+         "height":10,
+         "name":"resources",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":10,
+         "x":0,
+         "y":0
+        }],
+ "nextobjectid":1,
+ "orientation":"hexagonal",
+ "properties":
+    {
+     "name":"Small test map",
+     "portals":"[[4, 7, 'Central portal']]",
+     "resources":"[[3, 2], [6, 2]]",
+     "start_pos":"[4, 5]",
+     "terrains":"[[0, 10, 3, 5],[1, 10, 2, 6], [2, 5, 1, 2],]",
+     "uid":"test_json_map"
+    },
+ "propertytypes":
+    {
+     "name":"string",
+     "portals":"string",
+     "resources":"string",
+     "start_pos":"string",
+     "terrains":"string",
+     "uid":"string"
+    },
+ "renderorder":"right-down",
+ "staggeraxis":"x",
+ "staggerindex":"odd",
+ "tileheight":170,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "source":"soc terrain\/soc_terrain.tsx"
+        }, 
+        {
+         "firstgid":917,
+         "source":"soc resources\/soc_resources.tsx"
+        }],
+ "tilewidth":294,
+ "type":"map",
+ "version":"1.0.0",
+ "width":10
+}

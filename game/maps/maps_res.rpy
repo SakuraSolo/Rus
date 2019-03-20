@@ -1,0 +1,95 @@
+# basic resources used by maps and world
+init python:
+
+    # images of various resources
+    resourceImages = {
+        1: 'map tiles/road.png',
+        2: 'map tiles/tile_magicgate_01.png',
+        3: 'map tiles/village.png',
+        6: 'map tiles/tile_mine_01.png',
+        9: 'map tiles/drider nest.png',
+        12: 'map tiles/fortress.png',
+        13: 'map tiles/Orc Tribe.png',
+        16: 'map tiles/Winery.png',
+        19: 'map tiles/Abbey.png',
+        100: 'map tiles/village.png',
+        101: 'map tiles/tile_mine_01.png',
+        102: 'map tiles/arthdale.png',
+        105: 'map tiles/Orc Tribe.png',
+        106: 'map tiles/Rastedel_Middle.png',
+        107: 'map tiles/Rastedel Top back Middle.png',
+    }
+
+
+    # classes that should create instances for map resources (only those listed here will be created)
+    resource_classes = {
+        2: MRPortal,
+        3: MRVillage,
+        6: MRMine,
+        9: MRDriderNest,
+        12: MRFortress,
+        13: MROrcTribe,
+        16: MRWinery,
+        19: MRAbbey,
+        100: MRVillage,
+        101: MRMine,
+    }
+
+
+    # data for terrain - {uid: (movement cost, type (for events), (tile image var1, tile image var2, ...), ...}
+    # if movement cost == -1, terrain is impassable
+    terrain_data = {
+        -1: (-1, 'undef', ('map tiles/undef.png',)),
+        0: (1, 'plains', ('map tiles/tile_plain_01.png', 'map tiles/tile_plain_02.png', 'map tiles/tile_plain_05.png')),
+        1: (2, 'forest', ('map tiles/tile_forest_01.png', 'map tiles/tile_forest_02.png', 'map tiles/tile_forest_03.png')),
+        2: (2, 'hills', ('map tiles/hill tile.png', 'map tiles/hill tile 2.png', 'map tiles/hill tile 3.png')),
+        3: (1, 'desert', ('map tiles/desert.png',)),
+        4: (3, 'swamp', ('map tiles/tile_swamp_01.png', 'map tiles/tile_swamp_02.png')),
+        5: (-1, 'river', ('map tiles/river tile 12.png',)),
+        6: (-1, 'ocean', ('map tiles/ocean.png',)),
+        7: (-1, 'mountain', ('map tiles/mountain.png',)),
+        901: (-1, 'river', ('map tiles/river tile 01.png',)),
+        902: (-1, 'river', ('map tiles/river tile 02.png',)),
+        903: (-1, 'river', ('map tiles/river tile 03.png',)),
+        904: (-1, 'river', ('map tiles/river tile 04.png',)),
+        905: (-1, 'river', ('map tiles/river tile 05.png',)),
+        906: (-1, 'river', ('map tiles/river tile 06.png',)),
+        907: (-1, 'river', ('map tiles/river tile 07.png',)),
+        908: (-1, 'river', ('map tiles/river tile 08.png',)),
+        909: (-1, 'river', ('map tiles/river tile 09.png',)),
+        910: (-1, 'river', ('map tiles/river tile 10.png',)),
+        911: (-1, 'river', ('map tiles/river tile 11.png',)),
+        912: (-1, 'river', ('map tiles/river tile 12.png',)),
+        913: (-1, 'river', ('map tiles/river tile 13.png',)),
+        914: (-1, 'river', ('map tiles/river tile 14.png',)),
+        915: (-1, 'river', ('map tiles/river tile 15.png',)),
+        935: (0.5, 'road', ('map tiles/road tile 01.png',)),
+        936: (0.5, 'road', ('map tiles/road tile 02.png',)),
+        937: (0.5, 'road', ('map tiles/road tile 03.png',)),
+        938: (0.5, 'road', ('map tiles/road tile 04.png',)),
+        939: (0.5, 'road', ('map tiles/road tile 05.png',)),
+        940: (0.5, 'road', ('map tiles/road tile 06.png',)),
+        941: (0.5, 'road', ('map tiles/road tile 07.png',)),
+        942: (0.5, 'road', ('map tiles/road tile 08.png',)),
+        943: (0.5, 'road', ('map tiles/road tile 09.png',)),
+        944: (0.5, 'road', ('map tiles/road tile 10.png',)),
+        945: (0.5, 'road', ('map tiles/road tile 11.png',)),
+        946: (0.5, 'road', ('map tiles/road tile 12.png',)),
+        947: (0.5, 'road', ('map tiles/road tile 13.png',)),
+        948: (0.5, 'road', ('map tiles/road tile 14.png',)),
+        949: (0.5, 'road', ('map tiles/road tile 15.png',)),
+        950: (0.5, 'road', ('map tiles/road tile 16.png',)),
+        951: (0.5, 'road', ('map tiles/road tile 17.png',)),
+        952: (0.5, 'road', ('map tiles/road tile 18.png',)),
+        953: (0.5, 'road', ('map tiles/road tile 19.png',)),
+        973: (3, 'swamp', ('map tiles/Tileswamp near rastedel.png',)),
+        972: (1, 'plains', ('map tiles/Rastedel Top  Middle.png',)),
+        963: (0.5, 'road', ('map tiles/Rastedel top right.png',)),
+        964: (0.5, 'road', ('map tiles/Rastedel top left.png',)),
+        966: (-1, 'river', ('map tiles/Rastedel_Middle_Left.png',)),
+        967: (-1, 'river', ('map tiles/Rastedel_Middle_Right.png',)),
+        969: (0.5, 'road', ('map tiles/Rastedel Lower Rightnoble area.png',)),
+        970: (0.5, 'road', ('map tiles/Rastedel_ richdistrict left.png',)),
+        971: (-1, 'river', ('map tiles/rastedel waterway.png',)),
+    }
+
